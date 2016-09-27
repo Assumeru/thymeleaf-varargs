@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<title>Test page</title>
+</head>
+<body>
+	<p th:text="${obj.foo}"></p>
+	<p th:text="${obj.format('Hello world')}"></p>
+	<p th:text="${obj.format('Hello, %s', 'you')}"></p>
+	<p th:text="${obj.format('Hello, %s', obj.foo)}"></p>
+</body>
+</html>
